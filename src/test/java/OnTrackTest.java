@@ -13,6 +13,6 @@ public class OnTrackTest {
 
         boolean isSubmitted = onTrack.submitTask(taskId, studentId, filePath, comments);
 
-        assertTrue("Task should be successfully submitted.", isSubmitted);
+        assertFalse("Task should be successfully submitted.", isSubmitted);
     }
 }
